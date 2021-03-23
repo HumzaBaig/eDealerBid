@@ -1,0 +1,200 @@
+/* (1) Font Faces */
+@font-face {
+    font-family: 'BikoBold';
+    src: url('../fonts/biko_bold-webfont.woff2') format('woff2'),
+         url('../fonts/biko_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontExtraLight';
+    src: url('../fonts/mont-extralightdemo-webfont.woff2') format('woff2'),
+         url('../fonts/mont-extralightdemo-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontHeavy';
+    src: url('../fonts/mont-heavydemo-webfont.woff2') format('woff2'),
+         url('../fonts/mont-heavydemo-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* (2) Universal Styling */
+h1, h2, h3, h4, h5, h6, .nav-item {
+  font-family: 'BikoBold';
+  font-weight: 700;
+}
+
+p {
+  font-family: 'MontExtraLight';
+  font-weight: 300;
+}
+
+/* (3) Navbar */
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  font-size: 14px;
+}
+
+.navbar {
+  border-top: 30px solid #025ACE;
+}
+
+ /* (4) Hero Section */
+.jumbotron {
+  padding: 20px 0px;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: .3rem;
+}
+
+.hero-background {
+  background-color: rgba(46,183,237,0.5);
+  padding-top: 50px;
+  padding-left: 20px;
+  border-radius: 65px;
+  border-bottom-left-radius: 0px;
+
+  min-height: 450px;
+  max-height: 525px;
+}
+
+.hero-half {
+  width: 50%;
+}
+
+.vertical-line {
+  border: 1px solid rgba(255,255,255,0.25);;
+  border-radius: 25%;
+  height: 42.5%;
+  left: 50%;
+  top: 25%;
+  position: absolute;
+}
+
+.hero-header {
+  text-align: center;
+  font-size: 36px !important;
+  color: white !important;
+}
+
+.hero-image {
+  width: 95%;
+  bottom: 0;
+}
+
+/* (5) Break Section */
+.break-section {
+  background-color: #2eb7ed;
+  padding: 25px 0;
+}
+
+.break-text {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+/* (6) Testimonials Section */
+.testimonials-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonials-header {
+  font-size: 45px !important;
+  text-align: center;
+  color: black;
+}
+
+.testimonials-text {
+  text-align: center;
+  width: 60ch;
+}
+
+.review-container {
+  width: 17.5%;
+  position: relative;
+}
+
+.review-background {
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  height: 100%;
+  width: 75%;
+  right: 10%;
+  z-index: -1;
+
+  position: absolute;
+
+}
+
+.review-content {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.review-text {
+  font-size: 14px;
+  font-family: 'MontHeavy';
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 21ch;
+}
+
+.reviewer-name {
+  font-size: 12px;
+  font-family: 'MontHeavy';
+  color: #ccc;
+}
+
+.review-rating {
+  color: #2eb7ed;
+  margin-top: 15px;
+}
+
+/* (7) Second Break Section */
+.second-break-section {
+  width: 100%;
+}
+
+.second-break-section-image {
+  width: 100%;
+}
+
+/* (8) Steps Section */
+.steps-section {
+  background-color: #020ace;
+  height: 400px;
+  color: #fff;
+}
+
+.step-container {
+  width: 20%;
+}
+
+.step-text {
+  width: 23ch;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* (9) Video Section */
+.video-section {
+  height: 650px;
+}
+
+/* (10) Footer */
+footer {
+  background-color: #0F2D5B;
+  color: white;
+  height: 100px;
+}
