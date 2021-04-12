@@ -53,23 +53,19 @@ p {
 }
 
 .navbar {
-  border-top: 30px solid #025ACE;
+  border-top: 15px solid #025ACE;
 }
 
  /* (4) Hero Section */
 .jumbotron {
-  padding: 20px 0px;
   margin-bottom: 0;
   background-color: #fff;
-  border-radius: .3rem;
 }
 
 .hero-background {
   background-color: rgba(46,183,237,0.5);
   padding-top: 50px;
   padding-left: 20px;
-  border-radius: 65px;
-  border-bottom-left-radius: 0px;
 
   min-height: 450px;
   max-height: 525px;
@@ -79,19 +75,14 @@ p {
   width: 50%;
 }
 
-.vertical-line {
-  border: 1px solid rgba(255,255,255,0.25);;
-  border-radius: 25%;
-  height: 42.5%;
-  left: 50%;
-  top: 25%;
-  position: absolute;
-}
-
 .hero-header {
   text-align: center;
   font-size: 30px !important;
   color: white !important;
+}
+
+.hero-header:first-of-type {
+  margin-bottom: 0;
 }
 
 .hero-image {
@@ -179,18 +170,29 @@ p {
 }
 
 /* (8) Steps Section */
+.steps-title-section {
+  text-align: center;
+  background-color: #020ace;
+  color: #fff;
+  height: 150px;
+}
+
 .steps-section {
   background-color: #020ace;
-  height: 400px;
+  height: 300px;
   color: #fff;
 }
 
 .step-container {
-  width: 20%;
+  width: 25%;
+}
+
+.step-subtitle {
+  text-align: center;
+  font-size: 21px;
 }
 
 .step-text {
-  width: 23ch;
   font-size: 14px;
   text-align: center;
 }
@@ -208,5 +210,45 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* (11) Mobile Navbar */
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
+  .custom-toggler .navbar-toggler {
+    border-color: #fff;
+  }
+
+  .custom-toggler:focus {
+    box-shadow: 0 0 0 0.1rem #fff !important;
+  }
+
+  /* (12) Mobile Hero Section */
+  .jumbotron {
+    background-color: rgba(46,183,237,0.5);
+  }
+
+  .mobile-no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .hero-background {
+    background-color: transparent;
+    padding-top: 25px;
+    padding-left: 0px;
+
+    min-height: 650px;
+    max-height: 175vh;
+
+    flex-direction: column;
+  }
+
+  .hero-header {
+    font-size: 24px !important;
+  }
+
+  .hero-half {
+    width: 100%;
+  }
 }
