@@ -145,7 +145,7 @@ p {
   position: relative;
 }
 
-.review-background {
+/* .review-background {
   border-radius: 15px;
   background-color: #f9f9f9;
   height: 100%;
@@ -155,7 +155,7 @@ p {
 
   position: absolute;
 
-}
+} */
 
 .review-content {
   height: 150px;
@@ -178,7 +178,6 @@ p {
 
 .review-rating {
   color: #2eb7ed;
-  margin-top: 15px;
 }
 
 /* (7) Second Break Section */
@@ -208,6 +207,12 @@ p {
   color: #fff;
 }
 
+.steps-subtitle {
+  width: 70%;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
 .step-container {
   width: 25%;
   background-color: transparent;
@@ -215,7 +220,7 @@ p {
 }
 
 .card-img {
-  width: 50%;
+  width: 55%;
 }
 
 .card-text, .card-title {
