@@ -25,7 +25,7 @@
 }
 
 /* (2) Universal Styling */
-h1, h2, h3, h4, h5, h6, .nav-item {
+h1, h2, h3, h4, h5, h6, .nav-item, .btn-custom {
   font-family: 'BikoBold';
   font-weight: 700;
 }
@@ -56,14 +56,35 @@ p {
   border-top: 15px solid #025ACE;
 }
 
+.btn-custom-container {
+  width: 150px;
+  justify-content: flex-end;
+}
+
+.btn-custom {
+  background-color: #025ACE;
+  color: #fff;
+
+  font-size: 12px;
+
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
  /* (4) Hero Section */
 .jumbotron {
   margin-bottom: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: rgba(46,183,237,0.5); */
+  background: linear-gradient(to right,
+    rgba(46,183,237,0.5) 0%,
+    rgba(46,183,237,0.5) 50%,
+    #183558 50%,
+    #183558 50%,
+    #183558 100%);
 }
 
 .hero-background {
-  background-color: rgba(46,183,237,0.5);
   padding-top: 50px;
   padding-left: 20px;
 
@@ -170,30 +191,34 @@ p {
 }
 
 /* (8) Steps Section */
+.steps-section-background {
+  background-color: #183558;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
 .steps-title-section {
   text-align: center;
-  background-color: #020ace;
   color: #fff;
-  height: 150px;
+
+  margin-bottom: 50px;
 }
 
 .steps-section {
-  background-color: #020ace;
-  height: 300px;
   color: #fff;
 }
 
 .step-container {
   width: 25%;
+  background-color: transparent;
+  border: none;
 }
 
-.step-subtitle {
-  text-align: center;
-  font-size: 21px;
+.card-img {
+  width: 50%;
 }
 
-.step-text {
-  font-size: 14px;
+.card-text, .card-title {
   text-align: center;
 }
 
