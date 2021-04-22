@@ -321,6 +321,14 @@ p {
   width: 60ch;
 }
 
+#review-section-mobile {
+  display: none;
+}
+
+#review-section-desktop {
+  display: flex;
+}
+
 .review-container {
   width: 17.5%;
   position: relative;
@@ -436,7 +444,12 @@ footer {
 
   /* (12) Mobile Hero Section */
   .jumbotron {
-    background-color: rgba(46,183,237,0.5);
+    background: linear-gradient(to bottom,
+      rgba(46,183,237,0.5) 0%,
+      rgba(46,183,237,0.5) 50%,
+      #183558 50%,
+      #183558 50%,
+      #183558 100%);
   }
 
   .mobile-no-padding {
@@ -448,6 +461,7 @@ footer {
     background-color: transparent;
     padding-top: 25px;
     padding-left: 0px;
+    margin: auto;
 
     min-height: 650px;
     max-height: 175vh;
@@ -460,6 +474,38 @@ footer {
   }
 
   .hero-half {
+    width: 100%;
+  }
+
+  /* (13) Mobile Testimonials Section */
+  #review-section-mobile {
+    display: block;
+  }
+  #review-section-desktop {
+    display: none;
+  }
+
+  /* (15) Mobile Steps Section */
+  .steps-section-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .steps-title-section {
+    margin-bottom: 25px;
+  }
+
+  .steps-title {
+    font-size: 28px;
+  }
+
+  .steps-subtitle {
+    width: 100%;
+    letter-spacing: 0;
+    line-height: 1.5;
+  }
+
+  .step-container {
     width: 100%;
   }
 }
