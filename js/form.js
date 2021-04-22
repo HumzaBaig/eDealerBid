@@ -27,13 +27,13 @@ $(".next").click(function(){
 			opacity = 1 - now;
 			current_fs.css({
         'transform': 'scale('+scale+')',
-        'position': 'absolute'
       });
 			next_fs.css({'left': left, 'opacity': opacity});
 		},
 		duration: 800,
 		complete: function(){
 			current_fs.hide();
+			// next_fs.css({'margin-left': 'auto'})
 			animating = false;
 		},
 		//this comes from the custom easing plugin

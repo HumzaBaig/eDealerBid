@@ -48,14 +48,14 @@
     <div class="jumbotron custom-jumbotron">
       <div class="container-fluid mobile-no-padding">
         <div class="hero-background row">
-          <div class="hero-half col-md-6 col-12">
+          <div class="hero-half top-half col-md-6 col-12">
             <h1 class="hero-header">GET MORE FOR YOUR CAR BY HAVING</h1>
             <h1 class="hero-header">HUNDREDS OF BUYERS BID IN AN AUCTION</h1>
             <img class="hero-image" src="img/hands-thing.svg" alt="hands holding up bidding signs">
           </div>
-          <div class="hero-half col-md-6 col-12">
+          <div class="hero-half bottom-half col-md-6 col-12">
             <!-- <h1 class="hero-header">SELL YOUR CAR IN AS<br>LITTLE AS 2 DAYS!</h1> -->
-            <div class="d-inline-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
               <form id="msform">
                 <!-- progressbar -->
                 <ul id="progressbar">
@@ -125,12 +125,16 @@
                     <input class="inline-input col-9" type="number" name="zipcode" placeholder="Zip Code"/>
                     <input type="button" name="next" class="next action-button" value="Next"/>
                 </fieldset>
-                <fieldset>
+                <fieldset class="row">
                     <h2 class="fs-title">Additional Questions</h2>
-                    <h3 class="fs-subtitle">Fill in your credentials</h3>
-                    <input type="text" name="email" placeholder="Email"/>
-                    <input type="password" name="pass" placeholder="Password"/>
-                    <input type="password" name="cpass" placeholder="Confirm Password"/>
+                    <h3 class="fs-subtitle">These questions will help us better understand your situation</h3>
+                    <label for="options">Are you still making payments?</label>
+                    <br>
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn btn-outline-custom col-6" for="option1">Yes</label>
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-outline-custom right-button col-6" for="option1">No</label>
+                    <input type="text" name="condition" placeholder="Ex: My car has a few dents"/>
                     <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                     <input type="button" name="next" class="next action-button" value="Next"/>
                 </fieldset>
@@ -164,11 +168,11 @@
         </div>
       </div>
 
-      <div id="review-section-mobile" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+      <div id="review-section-mobile" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="review-container">
-              <div class="review-content d-flex flex-column justify-content-between">
+              <div class="review-content d-flex flex-column align-items-center justify-content-between">
                 <p class="review-text">On time and very professional... A deal that was good for everyone.</p>
                 <p class="reviewer-name">- John on Thumbtack</p>
                 <span class="review-rating"><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
@@ -176,14 +180,14 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="review-content d-flex flex-column justify-content-between">
+            <div class="review-content d-flex flex-column align-items-center justify-content-between">
               <p class="review-text">...Made me an offer that was more than other sell your car companies.</p>
               <p class="reviewer-name">- John on Thumbtack</p>
               <span class="review-rating"><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="review-content d-flex flex-column justify-content-between">
+            <div class="review-content d-flex flex-column align-items-center justify-content-between">
               <p class="review-text">They were able to wash my loan. Would recommend them to anyone.</p>
               <p class="reviewer-name">- John on Thumbtack</p>
               <span class="review-rating"><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
