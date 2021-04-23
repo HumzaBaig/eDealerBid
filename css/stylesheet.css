@@ -112,9 +112,9 @@ p {
 #msform {
     text-align: center;
     position: relative;
-    margin-top: 30px;
 
     width: 100%;
+    height: 100%;
 }
 
 #msform fieldset {
@@ -125,6 +125,7 @@ p {
     padding: 20px 30px;
     box-sizing: border-box;
     width: 70%;
+    /* height: 75%; */
     margin: 0 auto;
     right: 0;
     left: 0;
@@ -133,9 +134,27 @@ p {
     position: absolute;
 }
 
+
+@media (min-width: 1440px) {
+  #msform fieldset {
+      margin-top: 2.5%;
+  }
+}
+@media (min-width: 2560px) {
+  #msform fieldset {
+      margin-top: 10%;
+  }
+}
+
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
+}
+
+.question {
+  font-family: montserrat;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 /*inputs*/
@@ -163,11 +182,17 @@ p {
 }
 
  #msform .btn-outline-custom {
-  width: 48.75%;
+  width: 49%;
+}
+
+#msform .btn-outline-custom:hover, #msform .btn-outline-custom.active {
+  background-color: #ee0979;
+  color: #fff;
+  font-weight: bold;
 }
 
 #msform .right-button {
-  /* margin-left: 2.5%; */
+  margin-left: 1%;
 }
 
 .inline-input {
@@ -252,6 +277,7 @@ p {
     padding-left: 0;
     /*CSS counters to number the steps*/
     counter-reset: step;
+    height: 10%;
 }
 
 #progressbar li {

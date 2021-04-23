@@ -76,6 +76,15 @@ $(".previous").click(function(){
 	});
 });
 
-$(".submit").click(function(){
-	return false;
+
+$(".btn-outline-custom").click(function(){
+	currentRadio = $(this).children()[0];
+	currentButton = $(currentRadio).parent();
+	otherButton = $($(this).siblings()[4]);
+	otherRadio = otherButton.children()[0];
+
+	currentRadio.checked = true;
+	currentButton.addClass("active");
+	otherButton.removeClass("active");
+
 })

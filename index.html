@@ -55,8 +55,8 @@
           </div>
           <div class="hero-half bottom-half col-md-6 col-12">
             <!-- <h1 class="hero-header">SELL YOUR CAR IN AS<br>LITTLE AS 2 DAYS!</h1> -->
-            <div class="d-flex justify-content-center align-items-center">
-              <form id="msform">
+            <!-- <div class="d-flex justify-content-center align-items-center"> -->
+              <form id="msform" action="https://formspree.io/f/meqvonwr" method="POST">
                 <!-- progressbar -->
                 <ul id="progressbar">
                     <li class="active">Vehicle Details</li>
@@ -67,6 +67,7 @@
                 <fieldset class="row">
                     <h2 class="fs-title">Vehicle Details</h2>
                     <h3 class="fs-subtitle">Tells us about the vehicle you're looking into selling</h3>
+
                     <input type="text" name="license-or-vin" placeholder="Licence Plate or VIN"/>
                       <select class="col-3" name="state">
                         <option value="" disabled selected>State</option>
@@ -123,32 +124,42 @@
                       	<option value="WY">WY</option>
                       </select>
                     <input class="inline-input col-9" type="number" name="zipcode" placeholder="Zip Code"/>
+
                     <input type="button" name="next" class="next action-button" value="Next"/>
                 </fieldset>
                 <fieldset class="row">
                     <h2 class="fs-title">Additional Questions</h2>
                     <h3 class="fs-subtitle">These questions will help us better understand your situation</h3>
-                    <label for="options">Are you still making payments?</label>
-                    <br>
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                    <label class="btn btn-outline-custom col-6" for="option1">Yes</label>
-                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                    <label class="btn btn-outline-custom right-button col-6" for="option1">No</label>
+
+                    <p class="question" for="options">Are you still making payments on this vehicle?</p>
+                    <label class="btn btn-outline-custom" for="option1">
+                      <input type="radio" class="btn-check" value="Yes" name="options" id="option1" autocomplete="off" checked>
+                      Yes
+                    </label>
+                    <label class="btn btn-outline-custom right-button" for="option2">
+                      <input type="radio" class="btn-check" value="No" name="options" id="option2" autocomplete="off">
+                      No
+                    </label>
+
+                    <p class="question" for="condition">Is there anything you would want to know about your car before you bought it?</p>
                     <input type="text" name="condition" placeholder="Ex: My car has a few dents"/>
+
                     <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                     <input type="button" name="next" class="next action-button" value="Next"/>
                 </fieldset>
                 <fieldset>
                     <h2 class="fs-title">Personal Details</h2>
                     <h3 class="fs-subtitle">Tell us something more about you</h3>
+
                     <input type="text" name="fname" placeholder="Full Name"/>
                     <input type="text" name="phone" placeholder="Phone Number"/>
                     <input type="text" name="email" placeholder="Email Address"/>
+
                     <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
                     <input type="submit" name="submit" class="submit action-button" value="Submit"/>
                 </fieldset>
               </form>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
