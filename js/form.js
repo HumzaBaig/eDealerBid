@@ -84,6 +84,7 @@ $(".btn-outline-custom").click(function(){
 	otherRadio = otherButton.children()[0];
 
 	currentRadio.checked = true;
+	otherRadio.checked = false;
 	currentButton.addClass("active");
 	otherButton.removeClass("active");
 
