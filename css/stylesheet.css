@@ -84,7 +84,6 @@ p {
 
 .hero-background {
   padding-top: 50px;
-  padding-left: 20px;
 
   min-height: 450px;
   height: 70vh;
@@ -102,12 +101,8 @@ p {
 
 .hero-header {
   text-align: center;
-  font-size: 30px !important;
+  font-size: 50px !important;
   color: white !important;
-}
-
-.hero-header:first-of-type {
-  margin-bottom: 0;
 }
 
 .hero-image {
@@ -512,7 +507,10 @@ footer {
   }
 
   .hero-header {
-    font-size: 24px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 45px !important;
   }
 
   .hero-half {
