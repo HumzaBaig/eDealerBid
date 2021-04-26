@@ -166,7 +166,7 @@ p {
 }
 
 .question {
-  font-family: montserrat;
+  font-family: "MontExtraLight";
   font-size: 13px;
   margin-bottom: 10px;
 }
@@ -179,7 +179,7 @@ p {
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: "MontExtraLight";
     color: #2C3E50;
     font-size: 13px;
 }
@@ -190,7 +190,7 @@ p {
   border-radius: 3px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  font-family: montserrat;
+  font-family: "MontExtraLight";
   color: #2C3E50;
   font-size: 13px;
 }
@@ -210,14 +210,6 @@ p {
 }
 
 .inline-input {
-  /* padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  font-family: montserrat;
-  color: #2C3E50;
-  font-size: 13px; */
   margin-left: 2.5%;
   width: 72.5% !important;
 }
@@ -245,6 +237,9 @@ p {
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px auto;
+
+    font-family: "MontHeavy";
+    letter-spacing: 1px;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -515,7 +510,7 @@ footer {
     margin: auto;
 
     min-height: 650px;
-    height: 117.5vh;
+    height: 122vh;
   }
 
   .hero-header {
@@ -544,6 +539,14 @@ footer {
 
   #msform fieldset {
     width: 100%;
+  }
+
+  #msform .btn-outline-custom {
+   width: 48%;
+  }
+
+  .question {
+    font-size: 12px;
   }
 
   /* (13) Mobile Testimonials Section */
