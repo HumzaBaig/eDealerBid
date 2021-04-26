@@ -35,6 +35,18 @@ p {
   font-weight: 300;
 }
 
+#sell-your-car {
+  scroll-margin-top: 5em;
+}
+
+#reviews {
+  scroll-margin-top: 3em;
+}
+
+#reasons, #how-it-works {
+  scroll-margin-top: 1.5em;
+}
+
 /* (3) Navbar */
 .navbar-blue {
   background-color: #2eb7ed;
