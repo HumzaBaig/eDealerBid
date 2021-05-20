@@ -35,6 +35,17 @@ p {
   font-weight: 300;
 }
 
+hr {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  transition: 500ms;
+}
+
 #sell-your-car {
   scroll-margin-top: 5em;
 }
@@ -465,13 +476,31 @@ p {
 /* (9) Video Section */
 .video-section {
   height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  max-height: 90%;
 }
 
 /* (10) Footer */
 footer {
   background-color: #0F2D5B;
   color: white;
-  height: 100px;
+}
+
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-links-list {
+  list-style: none;
+}
+
+.footer-mini-text {
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {
