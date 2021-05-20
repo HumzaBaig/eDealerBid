@@ -497,7 +497,6 @@ footer {
 
 .footer-links-list {
   list-style: none;
-  text-align: center;
 }
 
 .footer-mini-text {
@@ -617,5 +616,14 @@ footer {
 
   .step-container {
     width: 100%;
+  }
+
+  /* (16) Footer Mobile */
+  .footer-company-info {
+    text-align: center;
+  }
+
+  .footer-links-list {
+    text-align: center;
   }
 }
