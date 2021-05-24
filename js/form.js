@@ -80,7 +80,7 @@ $(".previous").click(function(){
 $(".btn-outline-custom").click(function(){
 	currentRadio = $(this).children()[0];
 	currentButton = $(currentRadio).parent();
-	otherButton = $($(this).siblings()[4]);
+	otherButton = $($(this).siblings()[3]);
 	otherRadio = otherButton.children()[0];
 
 	currentRadio.checked = true;
