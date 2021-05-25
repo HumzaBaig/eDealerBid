@@ -488,7 +488,8 @@ a {
 
 /* (10) Footer */
 footer {
-  background-color: #0F2D5B;
+  /* background-color: #0F2D5B; */
+  background-color: #183558;
   color: white;
 }
 
