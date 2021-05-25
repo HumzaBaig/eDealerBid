@@ -518,6 +518,12 @@ footer {
     box-shadow: 0 0 0 0.1rem #fff !important;
   }
 
+  .btn-custom-container {
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   /* (12) Mobile Hero Section */
   .jumbotron {
     background: linear-gradient(to bottom,
@@ -579,7 +585,17 @@ footer {
     font-size: 12px;
   }
 
-  /* (13) Mobile Testimonials Section */
+  /* (13) Mobile Video Section */
+  .video-section {
+    height: 250px;
+  }
+
+  /* (14) Mobile Testimonials Section */
+  .testimonials-section {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
   #review-section-mobile {
     display: block;
   }
@@ -626,5 +642,6 @@ footer {
 
   .footer-links-list {
     text-align: center;
+    padding-left: 0;
   }
 }
